@@ -60,7 +60,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Settings" id="JCu-k1-IPR"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Slv-Fp-Zxe">
                             <connections>
-                                <segue destination="QuS-9r-09n" kind="presentation" id="zWG-mx-8hf"/>
+                                <segue destination="QuS-9r-09n" kind="presentation" identifier="AddWeatherCityViewController" id="zWG-mx-8hf"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
