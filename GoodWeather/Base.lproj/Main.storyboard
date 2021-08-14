@@ -85,6 +85,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnZ-R6-5aJ">
                                 <rect key="frame" x="190" y="120" width="34" height="30"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveCityButtonPressed" destination="jcm-zF-EhN" eventType="touchDown" id="4IC-lE-FJ9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8AD-02-ovf"/>
@@ -98,8 +101,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add City" id="5hZ-Qz-s35">
-                        <barButtonItem key="leftBarButtonItem" title="Close" id="RpX-ix-0v0"/>
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="RpX-ix-0v0">
+                            <connections>
+                                <action selector="close" destination="jcm-zF-EhN" id="zVn-aH-Nka"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="cityNameTextField" destination="1wh-Us-CqL" id="wBB-yx-nvy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aJx-6I-S3Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
