@@ -13,7 +13,7 @@ struct Resource<T> {
     let parse: (Data) -> T?
 }
 
-final class Weservice {
+final class Webservice {
     
     func load<T>(resource: Resource<T>, completion: @escaping (T?) -> ()) {
         
