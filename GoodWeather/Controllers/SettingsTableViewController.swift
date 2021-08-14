@@ -35,4 +35,8 @@ class SettingsTableViewController: UITableViewController {
         
         return cell
     }
+    
+    @IBAction func close() {
+        self.dismiss(animated: true, completion: nil)
+    }
 }

@@ -140,7 +140,7 @@
         <!--Settings-->
         <scene sceneID="nkH-RP-yot">
             <objects>
-                <tableViewController id="Zn3-An-SnP" sceneMemberID="viewController">
+                <tableViewController id="Zn3-An-SnP" customClass="SettingsTableViewController" customModule="GoodWeather" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gHV-pp-eNi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -160,7 +160,13 @@
                             <outlet property="delegate" destination="Zn3-An-SnP" id="2Kq-fe-uyR"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Settings" id="p1I-PZ-idb"/>
+                    <navigationItem key="navigationItem" title="Settings" id="p1I-PZ-idb">
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="Hn6-xj-aH3">
+                            <connections>
+                                <action selector="close" destination="Zn3-An-SnP" id="Gf7-47-MvX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qTF-i5-ED5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
