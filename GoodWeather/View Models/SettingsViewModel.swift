@@ -17,7 +17,7 @@ extension Unit {
     var displayName: String {
         get {
             switch(self) {
-            case . celsius:
+            case .celsius:
                 return "Celsius"
             case .fahrenheit:
                 return "Fahrenheit"
@@ -37,7 +37,7 @@ class SettingsViewModel {
             if let value = userDefaults.value(forKey: "unit") as? String {
                 unitValue = value
             }
-            return Unit(rawValue: unitValue)!
+            return Unit(rawValue: unitValue) ?? Unit.celsius
         }
         
         set {
