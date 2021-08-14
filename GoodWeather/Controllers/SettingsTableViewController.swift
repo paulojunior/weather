@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class SettingsTableViewController: UITableViewController {
-    prrivate var settingsViewModel = SettingsViewModel()
+    private var settingsViewModel = SettingsViewModel()
     
     
     override func viewDidLoad() {
