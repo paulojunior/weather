@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79199E5526C85B08004E1AD4 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79199E5426C85B08004E1AD4 /* Services.swift */; };
 		79CABE9B26C72AC90054996E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CABE9A26C72AC90054996E /* AppDelegate.swift */; };
 		79CABE9D26C72AC90054996E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CABE9C26C72AC90054996E /* SceneDelegate.swift */; };
 		79CABEA226C72AC90054996E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79CABEA026C72AC90054996E /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		79199E5426C85B08004E1AD4 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		79CABE9726C72AC90054996E /* GoodWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79CABE9A26C72AC90054996E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79CABE9C26C72AC90054996E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79199E5326C85AE8004E1AD4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				79199E5426C85B08004E1AD4 /* Services.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		79CABE8E26C72AC90054996E = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +70,7 @@
 		79CABE9926C72AC90054996E /* GoodWeather */ = {
 			isa = PBXGroup;
 			children = (
+				79199E5326C85AE8004E1AD4 /* Services */,
 				79CABEB326C733EA0054996E /* Custom Cells */,
 				79CABEAE26C72F020054996E /* Controllers */,
 				79CABE9A26C72AC90054996E /* AppDelegate.swift */,
@@ -160,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79CABEB026C72F180054996E /* WeatherListTableViewController.swift in Sources */,
+				79199E5526C85B08004E1AD4 /* Services.swift in Sources */,
 				79CABE9B26C72AC90054996E /* AppDelegate.swift in Sources */,
 				79CABEB526C733FD0054996E /* WeatherCell.swift in Sources */,
 				79CABEB226C72F4D0054996E /* AddWeatherCityViewController.swift in Sources */,
