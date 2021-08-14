@@ -14,6 +14,7 @@
 		79199E6326C861E6004E1AD4 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79199E6226C861E6004E1AD4 /* String+Extensions.swift */; };
 		79199E6526C864A9004E1AD4 /* WeatherListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79199E6426C864A9004E1AD4 /* WeatherListViewModel.swift */; };
 		79199E6726C86DE2004E1AD4 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79199E6626C86DE2004E1AD4 /* Double+Extensions.swift */; };
+		79199E6926C878A3004E1AD4 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79199E6826C878A3004E1AD4 /* SettingsTableViewController.swift */; };
 		79CABE9B26C72AC90054996E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CABE9A26C72AC90054996E /* AppDelegate.swift */; };
 		79CABE9D26C72AC90054996E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CABE9C26C72AC90054996E /* SceneDelegate.swift */; };
 		79CABEA226C72AC90054996E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79CABEA026C72AC90054996E /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		79199E6226C861E6004E1AD4 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		79199E6426C864A9004E1AD4 /* WeatherListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewModel.swift; sourceTree = "<group>"; };
 		79199E6626C86DE2004E1AD4 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		79199E6826C878A3004E1AD4 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		79CABE9726C72AC90054996E /* GoodWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79CABE9A26C72AC90054996E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79CABE9C26C72AC90054996E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			children = (
 				79CABEAF26C72F180054996E /* WeatherListTableViewController.swift */,
 				79CABEB126C72F4D0054996E /* AddWeatherCityViewController.swift */,
+				79199E6826C878A3004E1AD4 /* SettingsTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79199E6726C86DE2004E1AD4 /* Double+Extensions.swift in Sources */,
+				79199E6926C878A3004E1AD4 /* SettingsTableViewController.swift in Sources */,
 				79199E6326C861E6004E1AD4 /* String+Extensions.swift in Sources */,
 				79CABEB026C72F180054996E /* WeatherListTableViewController.swift in Sources */,
 				79199E5B26C860D6004E1AD4 /* AddWeatherViewModel.swift in Sources */,
