@@ -59,7 +59,7 @@
                     <navigationItem key="navigationItem" title="GoodWeather" id="rNy-Sz-vG3">
                         <barButtonItem key="leftBarButtonItem" title="Settings" id="JCu-k1-IPR">
                             <connections>
-                                <segue destination="gSL-1F-Mrr" kind="presentation" id="foW-OU-dz9"/>
+                                <segue destination="gSL-1F-Mrr" kind="presentation" identifier="SettingsTableViewController" id="foW-OU-dz9"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Slv-Fp-Zxe">
@@ -161,9 +161,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Settings" id="p1I-PZ-idb">
-                        <barButtonItem key="leftBarButtonItem" title="Close" id="Hn6-xj-aH3">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="Hn6-xj-aH3">
                             <connections>
-                                <action selector="close" destination="Zn3-An-SnP" id="Gf7-47-MvX"/>
+                                <action selector="done" destination="Zn3-An-SnP" id="gRz-kX-WlV"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
