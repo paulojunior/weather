@@ -12,6 +12,7 @@ class WeatherListTableViewController: UITableViewController, AddWeatherDelegate 
     
     private var weatherListViewModel = WeatherListViewModel()
     private var lastUnitSelection: Unit!
+    private var datasource: WeatherDataSource?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,9 @@ class WeatherListTableViewController: UITableViewController, AddWeatherDelegate 
         if let value = userDefaults.value(forKey: "unit") as? String {
             self.lastUnitSelection = Unit(rawValue: value)!
         }
+        
+        self.datasource = WeatherDataSource(self.weatherListViewModel)
+        self.tableView.dataSource = self.datasource
     }
     
     func addWeatherDidSave(vm: WeatherViewModel) {
@@ -28,24 +32,8 @@ class WeatherListTableViewController: UITableViewController, AddWeatherDelegate 
         self.tableView.reloadData()
     }
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
-    }
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return weatherListViewModel.numberOfRows(section)
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "WeatherCell", for: indexPath) as! WeatherCell
-        let weatherVM = weatherListViewModel.modelAt(indexPath.row)
-        cell.configure(weatherVM)
-        return cell
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
