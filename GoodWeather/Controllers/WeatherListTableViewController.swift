@@ -12,7 +12,7 @@ class WeatherListTableViewController: UITableViewController, AddWeatherDelegate 
     
     private var weatherListViewModel = WeatherListViewModel()
     private var lastUnitSelection: Unit!
-    private var datasource: WeatherDataSource?
+    private var datasource: TableViewDataSource<WeatherCell, WeatherViewModel>!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,12 +23,17 @@ class WeatherListTableViewController: UITableViewController, AddWeatherDelegate 
             self.lastUnitSelection = Unit(rawValue: value)!
         }
         
-        self.datasource = WeatherDataSource(self.weatherListViewModel)
+        self.datasource = TableViewDataSource(cellIdentifier: "WeatherCell", items: self.weatherListViewModel.weatherViewModels) { cell, vm in
+            cell.cityNameLabel.text = vm.city
+            cell.temperatureLabel.text = vm.temperature.formatAsDegree()
+        }
+        
         self.tableView.dataSource = self.datasource
     }
     
     func addWeatherDidSave(vm: WeatherViewModel) {
         weatherListViewModel.addWeatherViewModel(vm)
+        self.datasource.updateItems(self.weatherListViewModel.weatherViewModels)
         self.tableView.reloadData()
     }
     
